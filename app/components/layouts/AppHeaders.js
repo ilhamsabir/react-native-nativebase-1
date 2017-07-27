@@ -9,19 +9,14 @@ export default class AppHeaders extends Component {
   render() {
     return (
       <StyleProvider style={getTheme()}>
-        <Header>
+        <Header style={{ backgroundColor: '#fff', shadowColor: 'transparent', shadowOpacity: 0, elevation: 3}}>
            <StatusBar
-              backgroundColor= '#b1b1b1'
+              backgroundColor= '#039BE5'
               barStyle="light-content"
               />         
           <Body>
-            <Title>Header</Title>
+            <Title>Heder</Title>
           </Body>
-          <Right>
-            <Button transparent>
-              <Icon name='cash' />
-            </Button>
-          </Right>
         </Header>
        </StyleProvider>
     );

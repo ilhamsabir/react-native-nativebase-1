@@ -95,7 +95,7 @@ export default {
     return this.fontSizeBase * 3.8;
   },
 
-  buttonPadding: 6,
+  buttonPadding: 16,
 
   get iconSizeLarge() {
     return this.iconFontSize * 1.5;

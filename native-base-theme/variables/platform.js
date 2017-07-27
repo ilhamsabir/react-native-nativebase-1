@@ -150,7 +150,7 @@ export default {
   topTabBarActiveBorderColor: platform === "ios" ? "#007aff" : "#fff",
 
   // Header
-  toolbarBtnColor: platform === "ios" ? "#007aff" : "#fff",
+  toolbarBtnColor: platform === "ios" ? "#007aff" : "#263238",
   toolbarDefaultBg: platform === "ios" ? "#F8F8F8" : "#F8F8F8",
   toolbarHeight: platform === "ios" ? 64 : 56,
   toolbarIconSize: platform === "ios" ? 20 : 22,
@@ -243,7 +243,7 @@ export default {
 
   // Text
   textColor: "#000",
-  inverseTextColor: "#fff",
+  inverseTextColor: "#263238",
   noteFontSize: 14,
 
   // Title
@@ -253,7 +253,7 @@ export default {
   subtitleColor: platform === "ios" ? "#8e8e93" : "#FFF",
 
   // New Variable
-  titleFontColor: platform === "ios" ? "#000" : "#FFF",
+  titleFontColor: platform === "ios" ? "#000" : "#263238",
 
   // Other
   borderRadiusBase: platform === "ios" ? 5 : 2,

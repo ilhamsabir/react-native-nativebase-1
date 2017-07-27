@@ -19,7 +19,7 @@ export default class Contact extends Component {
       <Container>
         <Content>
           <Grid>
-            <Col style={{ backgroundColor: '#fff', height: 900 }}>
+            <Col style={{ backgroundColor: '#fff'}}>
                 <Text>Hai Setting </Text>
             </Col>
           </Grid>
