@@ -13,14 +13,14 @@ import { Container,
          Grid 
         } from 'native-base';
 
-export default class Contact extends Component {
+export default class History extends Component {
   render() {
     return (
       <Container>
         <Content>
           <Grid>
             <Col style={{ backgroundColor: '#fff'}}>
-                <Text>Hai Setting </Text>
+                <Text>Hai List </Text>
             </Col>
           </Grid>
         </Content>

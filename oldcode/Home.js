@@ -34,7 +34,7 @@ export default class Home extends Component {
   render() { 
     const styles = this.props.style;
     return (
-      <Container style={{ backgroundColor: '#fff', flex: 1, flexDirection: 'column', height: 900 }}>
+      <Container style={{ backgroundColor: '#eee', flex: 1, flexDirection: 'column', height: 900 }}>
         <MainMenu />
       </Container>
     );

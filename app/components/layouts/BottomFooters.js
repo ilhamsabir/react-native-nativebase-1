@@ -5,6 +5,8 @@ import { Router, Scene } from 'react-native-router-flux';
 import {
   View, StyleSheet
 } from 'react-native';
+import { TabNavigator } from 'react-navigation';
+
 import getTheme from './../../../native-base-theme/components';
 
 export default class BottomFooters extends Component {
@@ -13,7 +15,7 @@ export default class BottomFooters extends Component {
       <StyleProvider style={getTheme()}>
         <Footer>
           <FooterTab>
-            <Button vertical onPress={() => Actions.homes()}>
+            <Button vertical onPress={() => this.props.navigation.navigate('Home')}>
               <Icon name="apps" />
               <Text>Order</Text>
             </Button>
@@ -21,7 +23,7 @@ export default class BottomFooters extends Component {
               <Icon name="list-box" />
               <Text>History</Text>
             </Button>           
-            <Button vertical onPress={() => Actions.contact()}>
+            <Button vertical onPress={() => this.props.navigation.navigate('Contact')}>
               <Icon name="settings" />
               <Text>Settings</Text>
             </Button>
@@ -31,3 +33,27 @@ export default class BottomFooters extends Component {
     );
   }
 }
+// export default class BottomFooters extends Component {
+//   render() {
+//     return (
+//       <StyleProvider style={getTheme()}>
+//         <Footer>
+//           <FooterTab>
+//             <Button vertical onPress={() => Actions.homes()}>
+//               <Icon name="apps" />
+//               <Text>Order</Text>
+//             </Button>
+//             <Button vertical >
+//               <Icon name="list-box" />
+//               <Text>History</Text>
+//             </Button>           
+//             <Button vertical onPress={() => Actions.contact()}>
+//               <Icon name="settings" />
+//               <Text>Settings</Text>
+//             </Button>
+//           </FooterTab>
+//         </Footer>
+//       </StyleProvider>
+//     );
+//   }
+// }

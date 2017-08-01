@@ -1,33 +1,18 @@
 import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
 import { Router, Scene } from 'react-native-router-flux';
+import { StackNavigator } from 'react-navigation';
 
 import AppHeaders from './components/layouts/AppHeaders';
 import Footers from './components/layouts/BottomFooters';
-import Home from './components/Home';
-import Contact from './components/Contact';
+import { Tabs } from './Router';
 
 export default class Main extends Component {
   render() {
     return (
      <Container>        
         <AppHeaders />
-            <Router>
-                <Scene key="root">
-                    <Scene 
-                        key="homes"
-                        component={Home}
-                        initial
-                        hideNavBar={true}
-                    />
-                    <Scene
-                        key="contact"
-                        component={Contact}
-                        hideNavBar={true}
-                    />
-                </Scene>
-            </Router>
-        <Footers />
+        <Tabs />
       </Container>
     );
   }

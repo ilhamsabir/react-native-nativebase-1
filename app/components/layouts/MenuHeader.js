@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, StyleProvider, Text } from 'native-base';
 import {
   View, Dimensions, Image, StyleSheet, StatusBar
 } from 'react-native';
 import getTheme from './../../../native-base-theme/components';
 
-export default class AppHeaders extends Component {
+export default class MenuHeader extends Component {
   render() {
     return (
       <StyleProvider style={getTheme()}>
@@ -16,7 +16,7 @@ export default class AppHeaders extends Component {
               barStyle="light-content"
               />         
           <Body style={{ alignItems: 'center'}}>
-            <Image style={{ width: 100, height: 30 }} source={require('./../img/mainlogo.png')} />
+            <Text>YO-Ride</Text>
           </Body>
         </Header>
        </StyleProvider>
