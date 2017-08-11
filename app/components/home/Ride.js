@@ -73,8 +73,6 @@ export default class Ride extends Component {
     }
 
     render() {
-        console.log(this.state.lastRegion)
-        console.log(this.state.markerPosition)
         return (
         <Container> 
             <Content>
@@ -99,12 +97,9 @@ export default class Ride extends Component {
                     region={this.state.initialPosition}>
                         <MapView.Marker
                         coordinate={this.state.markerPosition}
-                        onDragEnd={(e) => this.setState({ markerPosition: e.nativeEvent.coordinate })}
-                        image={require('./../img/pick-up2.png')}
-                        title="Lokasi"
-                        description="Hello" />
-                    </MapView>
-                   
+                        onDragEnd={(e) =>  this.setState({ markerPosition: e.nativeEvent.coordinate })}
+                        image={require('./../img/pick-up-300.png')} />
+                    </MapView>                   
                 </Col>
             </Grid>
             </Content>
